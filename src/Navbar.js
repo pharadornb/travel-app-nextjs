@@ -34,7 +34,7 @@ export default function Navbar() {
           </IconButton>
           <a className={classes.navlink} href="/">
             <Typography variant="h6" className={classes.title}>
-              TRAVEL APP
+              พี่บ๋อมหล่อที่สุดในโลก
             </Typography>
           </a>
         </Toolbar>
