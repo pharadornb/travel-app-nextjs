@@ -4,12 +4,13 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
-function IndexPage({ data }) {
+function HomePage() {
   return (
     <div>
       <Navbar />
       <Container maxWidth="lg">
-        <div style={{ marginTop: "1em" }}>
+        <h1>I'm Home page</h1>
+        {/* <div style={{ marginTop: "1em" }}>
           <Typography variant="h4" gutterBottom>
             Aroud the world
           </Typography>
@@ -20,20 +21,10 @@ function IndexPage({ data }) {
               </Grid>
             ))}
           </Grid>
-        </div>
+        </div> */}
       </Container>
     </div>
   );
 }
 
-export async function getStaticProps() {
-  // const res = await fetch("https://www.mecallapi.com/api/attractions/");
-  // const data = await res.json();
-  const data = [];
-
-  return {
-    props: { data },
-  };
-}
-
-export default IndexPage;
+export default HomePage;
